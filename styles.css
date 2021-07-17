@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    background-color: black;
+    color: whitesmoke;
+}
+
+nav {
+    height: 5.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: darkred;
+}
+
+nav a {
+    padding: 1em;
+    font-size: 1.25em;
+    color: whitesmoke;
+    text-decoration: none;
+    text-shadow: 2px 1px black;
+}
+
+.banner {
+    background-image: url(./resources/maxim-hopman-PEJHULxUHZs-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 5px 3px darkred;
+    font-size: 2rem;
+    height: 20rem;
+}
+
+.banner h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.75em;
+    text-align: center;
+    position: relative;
+    top: 5rem;
+}
+
+.intro {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 4rem 1rem;
+}
+
+.intro-text {
+    flex-direction: column;
+    width: 60%;
+    margin: 1em;
+    text-align: justify;
+    font-weight: lighter;
+}
+
+.intro h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    text-decoration-line: underline;
+    text-decoration-color: darkred;
+}
+
+.intro p {
+    font-size: 1.25em;
+    line-height: 1.5;
+}
+
+.intro img {
+    width: 20%;
+    margin: 1rem;
+}
+
+.testimonial {
+    width: 100%;
+    margin: 3rem 0;
+    padding: 3.5rem;
+    text-align: right;
+    background-color: darkred;
+}
+
+.testimonial h2 {
+    font-size: 2em;
+    font-style: oblique;
+    line-height: 1.5;
+}
+
+.testimonial p {
+    margin-top: 1.5rem;
+}
+
+.photos {
+    display: grid;
+    width: 50%;
+    margin: 5rem auto;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    grid-gap: 4rem;
+    justify-items: center;
+}
+
+.photos img {
+    width: 100%;
+}
+
+.a {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+}
+
+.b {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.c {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.join {
+    text-align: center;
+    margin: 5rem auto;
+    width: 90%;
+}
+
+.join h2 {
+    font-size: 2rem;
+    text-shadow: 3px 1px darkred;
+}
+
+.join img {
+    width: 50%;
+    padding: 3rem;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1.5rem;
+    font-size: 1rem;
+    background-image: url(./resources/up-arrow-icon-png.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+  }
+
+  @media only screen and (max-width: 1025px) {
+      .banner {
+          font-size: 1.5rem;
+      }
+
+      .intro-text h2 {
+          text-align: center;
+          padding-bottom: 1rem;
+      }
+  }
+
+  @media only screen and (max-width: 760px) {
+
+    body {
+        margin-bottom: 4.5rem;
+    }
+
+    .banner {
+        font-size: 1rem;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .intro {
+        flex-direction: column;
+        margin: 2rem 1rem;
+    }
+
+    .intro-text {
+        width: 90%;
+        text-align: center;
+    }
+
+    .intro h2 {
+        padding: 1rem;
+    }
+
+    .intro img {
+        display: none;
+    }
+
+    .testimonial {
+        padding: 2.5rem;
+    }
+
+    .testimonial h2 {
+        font-size: 1.5rem;
+    }
+
+    .photos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 50%;
+        height: 45rem;
+        margin: 2rem auto;
+        grid-gap: 0;
+    }
+
+    .a {
+        display: none;
+    }
+
+    .join {
+        margin: 1rem auto;
+    }
+
+    .join h2 {
+        font-size: 1.25rem;
+    }
+
+    .join img {
+        padding: 1rem;
+    }
+}
